@@ -22,6 +22,10 @@ Plug 'nvim-treesitter/nvim-treesitter'
 " Find Fildter Preview...and more
 Plug 'nvim-telescope/telescope.nvim'
 
+" Plugins for telescope.nvim
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/telescope.nvim'
+
 call plug#end()
 
 " General settings
@@ -74,6 +78,9 @@ lua require('components.icons')
 
 " Nvim Treesitter (lua)
 lua require('components.tree')
+
+" Telescope.nvim
+lua require('components.telescope')
 
 " Nvim Tree (lua)
 let g:nvim_tree_side = 'left'
