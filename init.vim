@@ -54,7 +54,7 @@ set shiftwidth=2
 " Custom command
 nmap <C-i> :PlugInstall<CR>
 nmap <C-b> :NvimTreeToggle<CR>
-nmap <C-s>s :Telescope find_files<CR>
+nmap <C-s>f :Telescope find_files<CR>
 nmap <C-s>l :Telescope live_grep<CR>
 nmap <C-s>b :Telescope buffers<CR>
 nmap <C-s>h :Telescope help_tags<CR>
