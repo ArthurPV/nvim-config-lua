@@ -21,7 +21,7 @@ vim.o.expandtab = true
 vim.bo.expandtab = true
 
 -- set language
-vim.cmd('language en_US.utf-8')
+-- vim.cmd('language en_US.utf-8')
 vim.wo.list = true
 vim.o.listchars = 'tab:┆·,trail:·,precedes:,extends:'
 
