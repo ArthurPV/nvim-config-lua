@@ -23,6 +23,6 @@ nn <silent> <leader>r :call TermBufMExecCodeScript(&filetype, 'run')<CR>
 nn <silent> <leader>f :call TermBufMExec('pbpaste > input')<CR>
 nn <silent> <leader><space> :call TermBufMToggle()<CR>
 
-let g:highlightedyank_highlight_duration = 300
-runtime macros/sandwich/keymap/surround.vim
-call operator#sandwich#set('all', 'all', 'highlight', 1)
+" let g:highlightedyank_highlight_duration = 300
+" runtime macros/sandwich/keymap/surround.vim
+" call operator#sandwich#set('all', 'all', 'highlight', 1)
