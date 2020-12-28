@@ -1,5 +1,2 @@
 require('plug')
 require('options')
-require('setup')
-require('binds')
-require('stl')
