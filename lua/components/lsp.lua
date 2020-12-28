@@ -37,6 +37,12 @@ lsp.clangd.setup(
 	}
 )
 
+lsp.vimls.setup(
+	{
+		on_attach = custom_attach
+	}
+)
+
 local cppLang = require('components.lang.cpp')
 
 lsp.efm.setup {
