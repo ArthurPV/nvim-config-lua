@@ -8,5 +8,6 @@ return require('packer').startup(
 		use 'kyazdani42/nvim-tree.lua'
 		use 'kyazdani42/nvim-web-devicons'
 		use 'nvim-lua/completion-nvim'
+		use 'wbthomason/packer.nvim'
 	end
 )
