@@ -14,7 +14,7 @@ let g:run_code = {
 	\ 'rust': { 'build': ['rustc %s -o a.out', '%'], 'run': ['cat input | ./a.out'] },
 	\ }
 
-set fdm=marker fld=0
+set fdm=marker fdl=0
 
 " Keybinding
 
