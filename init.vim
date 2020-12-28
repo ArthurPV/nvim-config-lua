@@ -19,6 +19,9 @@ Plug 'ArthurPV/vim-moon-color'
 " Nvim Treesitter
 Plug 'nvim-treesitter/nvim-treesitter'
 
+" Find Fildter Preview...and more
+Plug 'nvim-telescope/telescope.nvim'
+
 call plug#end()
 
 " General settings
