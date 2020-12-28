@@ -7,5 +7,6 @@ return require('packer').startup(
 		use 'ArthurPV/vim-moon-color'
 		use 'kyazdani42/nvim-tree.lua'
 		use 'kyazdani42/nvim-web-devicons'
+		use 'nvim-lua/completion-nvim'
 	end
 )
