@@ -25,6 +25,7 @@ Plug 'nvim-telescope/telescope.nvim'
 " Plugins for telescope.nvim
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/telescope.nvim'
+Plug 'nvim-lua/plenary.nvim'
 
 call plug#end()
 
