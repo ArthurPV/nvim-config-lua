@@ -27,6 +27,14 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/telescope.nvim'
 Plug 'nvim-lua/plenary.nvim'
 
+" Plugins for completion
+Plug 'nvim-lua/completion-nvim'
+Plug 'neovim/nvim-lspconfig'
+Plug 'steelsojka/completion-buffers'
+
+" Snippets
+Plug 'norcalli/snippets.nvim'
+
 call plug#end()
 
 " General settings
@@ -87,6 +95,13 @@ lua require('components.tree')
 " Telescope.nvim
 lua require('components.telescope')
 
+" LSP (completions nvim (lua))
+lua require('components.lsp')
+
+" snippets
+lua require('components.snippets.main')
+
+
 " Nvim Tree (lua)
 let g:nvim_tree_side = 'left'
 let g:nvim_tree_width = 25
@@ -101,3 +116,30 @@ let g:nvim_tree_git_hl = 1
 let g:nvim_tree_root_folder_modifier = ':~'
 let g:nvim_tree_tab_open = 1
 let g:nvim_tree_width_allow_resize = 1
+
+" snippets.nvim
+
+inoremap <c-k> <cmd>lua return require'snippets'.expand_or_advance(1)<CR>
+inoremap <c-j> <cmd>lua return require'snippets'.advance_snippet(-1)<CR>
+
+set completeopt=menuone,noinsert,noselect
+
+set shortmess+=c
+
+imap <tab> <Plug>(completion_smart_tab)
+imap <s-tab> <Plug>(completion_smart_s_tab)
+
+" Completion-nvim (lsp)
+
+let g:completion_enable_snippet = 'snippets.nvim'
+
+let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
+ 
+let g:completion_matching_smart_case = 1
+ 
+let g:completion_trigger_character = ['.','::']
+ 
+let g:completion_trigger_on_delete = 1
+
+autocmd BufEnter * lua require'completion'.on_attach()
+autocmd BufWritePost *.java,*.cpp,*.py,*.lua lua vim.lsp.buf.formatting()
