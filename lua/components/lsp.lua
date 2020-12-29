@@ -37,7 +37,64 @@ lsp.clangd.setup(
 	}
 )
 
+-- Vim language server
 lsp.vimls.setup(
+	{
+		on_attach = custom_attach
+	}
+)
+
+-- Bash language server
+lsp.bashls.setup(
+	{
+		on_attach = custom_attach
+	}
+)
+
+-- Json language server
+lsp.jsonls.setup(
+	{
+		on_attach = custom_attach
+	}
+)
+
+-- HTML language server
+lsp.html.setup(
+	{
+		on_attach = custom_attach
+	}
+)
+
+-- Rust language server
+lsp.rust_analyzer.setup(
+	{
+		on_attach = custom_attach
+	}
+)
+
+-- Typescript (Javascript) language server
+lsp.tsserver.setup(
+	{
+		on_attach = custom_attach
+	}
+)
+
+-- Clojure language server
+lsp.clojure_lsp.setup(
+	{
+		on_attach = custom_attach
+	}
+)
+
+-- Elixir language server
+lsp.elixirls.setup(
+	{
+		on_attach = custom_attach
+	}
+)
+
+-- Python
+lsp.jedi_language_server.setup(
 	{
 		on_attach = custom_attach
 	}
