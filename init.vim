@@ -16,6 +16,9 @@ Plug 'kyazdani42/nvim-web-devicons'
 " Colorscheme
 Plug 'ArthurPV/vim-moon-color'
 
+" Vista.vim
+Plug 'liuchengxu/vista.vim'
+
 " Nvim Treesitter
 Plug 'nvim-treesitter/nvim-treesitter'
 
@@ -37,6 +40,9 @@ Plug 'norcalli/snippets.nvim'
 
 " Buffers
 Plug 'akinsho/nvim-bufferline.lua'
+
+" Galaxyline
+Plug 'glepnir/galaxyline.nvim'
 
 call plug#end()
 
