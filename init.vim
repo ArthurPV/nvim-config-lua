@@ -35,6 +35,9 @@ Plug 'steelsojka/completion-buffers'
 " Snippets
 Plug 'norcalli/snippets.nvim'
 
+" Buffers
+Plug 'akinsho/nvim-bufferline.lua'
+
 call plug#end()
 
 " General settings
@@ -101,6 +104,7 @@ lua require('components.lsp')
 " snippets
 lua require('components.snippets.main')
 
+lua require'bufferline'.setup()
 
 " Nvim Tree (lua)
 let g:nvim_tree_side = 'left'
