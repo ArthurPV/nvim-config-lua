@@ -53,9 +53,9 @@ nmap <C-t>l :FloatermLast<CR>
 nmap <C-t> :FloatermNew<CR>
 nmap <C-t>h :FloatermHide<CR>
 nmap <C-b> :NvimTreeToggle<CR>
-nmap <C-e> :Telescope find_files<CR>
+nmap <C-f> :Telescope find_files<CR>
 nmap <C-g> :Telescope live_grep<CR>
-nmap <C-d> :Telescope buffers<CR>
+nmap <C-e> :Telescope buffers<CR>
 nmap <C-h> :Telescope help_tags<CR>
 
 " Command (run or build)
